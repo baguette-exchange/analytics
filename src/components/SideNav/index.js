@@ -169,8 +169,8 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://chat.avalabs.org" target="_blank">
-                Discord
+              <Link href="https://t.me/baguette_AVAX" target="_blank">
+                Telegram
               </Link>
             </HeaderText>
             <HeaderText>
