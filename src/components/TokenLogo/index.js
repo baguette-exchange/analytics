@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import PlaceHolder from '../../assets/placeholder.png'
 import EthereumLogo from '../../assets/eth.png'
+import BaguetteLogo from '../../assets/baguette.png'
 
 const BAD_IMAGES = {}
 
@@ -70,9 +71,22 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/${isAddress(
-    address
-  )}/logo.png`
+  if (address?.toLowerCase() === '0xa1144a6a1304bd9cbb16c800f7a867508726566e') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src={BaguetteLogo}
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  const path = `https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/${isAddress(address)}/logo.png`
 
   return (
     <Inline>
