@@ -20,7 +20,7 @@ import { BasicLink } from '../components/Link'
 import { useMedia } from 'react-use'
 import Search from '../components/Search'
 import { useEthPrice } from '../contexts/GlobalData'
-import Markr from '../assets/markr.png'
+import Debank from '../assets/debank.png'
 
 const AccountWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.2);
@@ -172,10 +172,10 @@ function AccountPage({ account }) {
             <span>
               <RowFixed gap="8px" justify="flex-start">
                 <TYPE.header fontSize={24}>{account?.slice(0, 6) + '...' + account?.slice(38, 42)}</TYPE.header>
-                <Link external href={'https://markr.io/#/wallet?address=' + account} style={{ marginLeft: '.5rem' }}>
+                <Link external href={'https://debank.com/profile/' + account} style={{ marginLeft: '.5rem' }}>
                   <ButtonLight style={{ padding: '4px 6px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
                     Track your portfolio on
-                    <img style={{ width: '16px', marginLeft: '.5rem' }} src={Markr} alt="Markr.io" />
+                    <img style={{ width: '16px', marginLeft: '.5rem' }} src={Debank} alt="debank.com" />
                   </ButtonLight >
                 </Link>
               </RowFixed>

@@ -183,6 +183,11 @@ function SideNav({ history }) {
                 Markr.io
               </Link>
             </HeaderText>
+            <HeaderText>
+              <Link href="https://debank.com/projects/avax_baguette" target="_blank">
+                Debank
+              </Link>
+            </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (
