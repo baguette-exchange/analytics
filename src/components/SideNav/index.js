@@ -188,6 +188,11 @@ function SideNav({ history }) {
                 Debank
               </Link>
             </HeaderText>
+            <HeaderText>
+              <Link href="https://www.geckoterminal.com/avax/baguette/pools" target="_blank">
+                Gecko Terminal
+              </Link>
+            </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (
